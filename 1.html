@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhutanese Rizz Generator 😏</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fdf6e3;
+            color: #333;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #ffb347;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .rizz {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #d85d17;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💘 Bhutanese Rizz Generator 💘</h1>
+        <button onclick="generateRizz()">Drop a Line 😎</button>
+        <div class="rizz" id="rizzLine"></div>
+    </div>
+
+    <script>
+        const rizzLines = [
+            "I'd call you Ema Datshi, 'cause you're spicy and hot 🌶️🔥",
+            "Are you from Paro? 'Cause you just landed in my heart like Druk Air 🛬❤️",
+            "You must be suja, 'cause you're warming my soul 🧈☕",
+            "If you were a momo, I'd never dip you — you're already perfect 🥟💘",
+            "You're like Phobjikha Valley... rare, peaceful, and stunning 🏞️💚",
+            "Call me a yak herder, 'cause I’d climb any mountain for you 🏔️😉",
+            "You're sweeter than zaw soaked in honey 🍯💕",
+            "Forget the coronation — you’re already my queen/king 👑❤️"
+        ];
+
+        function generateRizz() {
+            const randomLine = rizzLines[Math.floor(Math.random() * rizzLines.length)];
+            document.getElementById('rizzLine').innerText = randomLine;
+        }
+    </script>
+</body>
+</html>
